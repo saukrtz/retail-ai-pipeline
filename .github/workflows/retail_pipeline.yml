@@ -17,4 +17,5 @@ jobs:
         pip install pandas pytest
     - name: Run tests
       run: |
+        export PYTHONPATH=$PYTHONPATH:$(pwd)/pipeline
         pytest pipeline/test_pipeline.py
