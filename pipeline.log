@@ -1,0 +1,26 @@
+2026-05-06 14:34:44,756 - INFO - --- Pipeline Started ---
+2026-05-06 14:34:44,756 - INFO - Loading data from orders.csv
+2026-05-06 14:34:44,777 - INFO - Starting data cleaning...
+2026-05-06 14:34:44,792 - ERROR - Error during cleaning: 'price'
+2026-05-06 14:34:44,792 - ERROR - --- Pipeline Failed ---
+2026-05-06 14:36:13,275 - INFO - --- Pipeline Started ---
+2026-05-06 14:36:13,275 - INFO - Loading data from orders.csv
+2026-05-06 14:36:13,296 - INFO - Starting data cleaning...
+2026-05-06 14:36:13,307 - WARNING - Column 'price' is missing. Initializing with default values.
+2026-05-06 14:36:13,342 - INFO - Cleaning complete. Remaining rows: 4
+2026-05-06 14:36:13,342 - INFO - Starting data transformation...
+2026-05-06 14:36:13,342 - INFO - Filtering records from 2024-01-01 onwards.
+2026-05-06 14:36:13,356 - INFO - Transformation complete.
+2026-05-06 14:36:13,358 - INFO - Data successfully saved to revenue.csv
+2026-05-06 14:36:13,359 - INFO - Data successfully saved to daily_sales.csv
+2026-05-06 14:36:13,360 - INFO - --- Pipeline Completed Successfully ---
+2026-05-06 14:36:51,954 - INFO - --- Pipeline Started ---
+2026-05-06 14:36:51,955 - INFO - Loading data from orders.csv
+2026-05-06 14:36:51,982 - INFO - Starting data cleaning...
+2026-05-06 14:36:51,993 - INFO - Cleaning complete. Remaining rows: 10000
+2026-05-06 14:36:51,993 - INFO - Starting data transformation...
+2026-05-06 14:36:51,993 - INFO - Filtering records from 2024-01-01 onwards.
+2026-05-06 14:36:52,005 - INFO - Transformation complete.
+2026-05-06 14:36:52,006 - INFO - Data successfully saved to revenue.csv
+2026-05-06 14:36:52,007 - INFO - Data successfully saved to daily_sales.csv
+2026-05-06 14:36:52,007 - INFO - --- Pipeline Completed Successfully ---

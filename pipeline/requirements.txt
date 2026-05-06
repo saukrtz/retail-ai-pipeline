@@ -1,0 +1,2 @@
+python3 pipeline/main.pypandas
+pytest

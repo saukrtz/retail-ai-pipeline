@@ -1,0 +1,23 @@
+```python
+def clean_data(df):
+    try:
+        logging.info("Starting data cleaning...")
+        
+        # Check if columns exist before filling or filtering
+        if 'price' in df.columns:
+            df['price'] = df['price'].fillna(0)
+        if 'quantity' in df.columns:
+            df['quantity'] = df['quantity'].fillna(1)
+        if 'discount' in df.columns:
+            df['discount'] = df['discount'].fillna(0)
+        
+        # Check if columns exist before filtering
+        if 'price' in df.columns and 'quantity' in df.columns:
+            df = df[(df['price'] > 0) & (df['quantity'] > 0)]
+        
+        logging.info(f"Cleaning complete. Remaining rows: {len(df)}")
+        return df
+    except Exception as e:
+        logging.error(f"Error during cleaning: {e}")
+        return None
+```

@@ -1,0 +1,20 @@
+name: Retail Pipeline
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: |
+        pip install pandas pytest
+    - name: Run tests
+      run: |
+        pytest pipeline/test_pipeline.py
